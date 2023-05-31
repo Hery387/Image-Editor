@@ -41,7 +41,16 @@ int main(){
         case 2:
             // Code to handle creating a new image
             printf("You chose to create a new image.\n");
-            // Add Code here
+            {
+                int width, height;
+
+                printf("Enter the width of the image:");
+                scanf("%d", &width);
+                printf("Enter the height of the image:");
+                scanf("%d", &height);
+
+                Image newImage = createImage(width, height);
+            }
             break;
 
         case 3:
